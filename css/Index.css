@@ -1,0 +1,59 @@
+body {
+    background-image: url('../Imgs/Background.png'); 
+    background-size: cover;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.login-container h1 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #464646;
+}
+
+.login-container input[type="username"], .login-container input[type="password"] {
+    font-family: "Playfair Display", serif;
+    width: 89%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+}
+
+.login-container button {
+    font-family: "Playfair Display", serif;
+    width: 100%;
+    padding: 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #bebebe;
+    color: #000000;
+}

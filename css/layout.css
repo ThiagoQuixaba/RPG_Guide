@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('../Imgs/Background.png'); 
+    background-size: cover;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 100vw;
+	margin: 3px;
+}
+
+header, nav{
+	display: flex;
+	margin: 3px;
+}
+
+header {
+    border: 2px solid #312113; 
+    border-radius: 10px;
+    padding: 10px 20px;
+	height: 125px;
+	flex: 1 1 100vw;
+}
+header #logo {
+	display: flex;
+	flex: 0 1 200px;
+	justify-content: center;
+	align-items: center;
+}
+
+nav {
+    justify-content: flex-end; 
+    align-items: center;
+    flex: 1 1 auto;
+    gap: 20px; 
+}
+nav a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Cinzel', serif; 
+    font-size: 20pt;
+    color: #312113; 
+    padding: 10px 10px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+nav p {
+    position: relative;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    font-size: 20pt;
+    color: #312113; 
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+nav a:hover {
+    color: #ffa500; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ffa500, #ff8800);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+nav a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+main {
+	border: 2px solid #312113; 
+    border-radius: 10px;
+    padding: 10px 20px;
+	flex: 20 1 500px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.titulo {
+    font-family: "Playfair Display", serif;
+    font-size: 32pt;
+    color: #312113; 
+}
+.titulo:hover {
+    color: #ffa500; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+}
+.titulo::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ff8800, #dd7600);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.descricao {
+    font-family: "Playfair Display", serif;
+    font-size: 12pt;
+    color: #312113; 
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
