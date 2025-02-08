@@ -33,6 +33,9 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+// Serve arquivos estáticos das pastas 'imgs'
+app.use('/imgs', express.static(path.join(__dirname, 'imgs')));
+
 // Inicia o servidor
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
