@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
 });
 
 // Serve arquivos estáticos das pastas 'imgs'
-app.use('/imgs', express.static(path.join(__dirname, 'imgs')));
+app.use('/Imgs', express.static(path.join(__dirname, 'Imgs')));
 
 // Inicia o servidor
 app.listen(PORT, () => {
