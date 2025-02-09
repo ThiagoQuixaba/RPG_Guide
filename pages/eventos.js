@@ -48,10 +48,6 @@ function gerarCalendario() {
     }
 }
 
-function marcarEvento(diaElemento) {
-    diaElemento.classList.toggle('evento');
-}
-
 document.getElementById('btn-anterior').onclick = () => {
     dataAtual.setMonth(dataAtual.getMonth() - 1);
     gerarCalendario();
