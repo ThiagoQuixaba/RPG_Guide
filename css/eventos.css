@@ -1,0 +1,55 @@
+#calendar {
+    display: flex; /* Adiciona flexbox */
+    flex-direction: column; /* Muda a direção para coluna, se necessário */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+}
+.calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin: 0 20px; /* Espaço horizontal entre os botões e o calendário */
+}
+.dia {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.dia-semana {
+    font-size: 18pt; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Deixa a fonte em negrito, se desejar */
+    text-align: center; /* Centraliza o texto */
+}
+#titulo-calendario {
+    font-size: 32pt; /* Define o tamanho da fonte para 24pt */
+    font-weight: bold; /* Deixa a fonte em negrito, se desejar */
+    text-align: center; /* Centraliza o texto */
+}
+.evento {
+    background-color: #ffcc00;
+}
+.navegacao {
+    display: flex;
+    flex-direction: column; /* Coloca os botões em coluna */
+    justify-content: center; /* Centraliza os botões */
+    position: static; /* Mantém a posição estática */
+}
+button {
+    padding: 5px 10px; /* Tamanho dos botões */
+    cursor: pointer;
+    font-size: 14px; /* Tamanho da fonte */
+    border: 1px solid #ccc; /* Adiciona borda aos botões */
+    background-color: #f0f0f0; /* Cor de fundo dos botões */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Efeito de transição */
+    margin: 5px 0; /* Espaçamento entre os botões */
+}
+button:hover {
+    background-color: #e0e0e0; /* Cor ao passar o mouse */
+}
