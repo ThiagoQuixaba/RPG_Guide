@@ -4,8 +4,9 @@
 		<meta charset="utf-8">
 		<link rel="icon" type="image/png" href="../imgs/LogoIcon.png">
 		<link rel="stylesheet" type="text/css" href="../css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../css/eventos.css">
 		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-		<title>Eventos</title>
+		<title>eventos</title>
 	</head>
 	<body>
 		<header>
@@ -24,7 +25,19 @@
 			</nav>
 		</header>
 		<main>
-			
+			<div id="calendar">
+				<h1 id="titulo-calendario">Calendário</h1>
+				<br>
+				<div class="container">
+					<div class="navegacao">
+						<button id="btn-anterior">Anterior</button>
+					</div>
+					<div id="calendario" class="calendario"></div>
+					<div class="navegacao">
+						<button id="btn-proximo">Próximo</button>
+					</div>
+				</div>
+			</div>
 		</main>
 		<script src="eventos.js"></script>
 	</body>
