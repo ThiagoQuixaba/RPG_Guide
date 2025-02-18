@@ -31,16 +31,27 @@ form.addEventListener('submit', async (event) => {
             user = await response.json();
 
             if (user.password === password) {
-                delete user.password;
-                login.login = true;
-                login.user = user;
+                if (user.admin === 'true') {
+                    delete user.password;
+                    login.login = true;
+                    login.user = user;
 
-                // Armazenar login
-                sessionStorage.setItem('login', JSON.stringify(login));
+                    // Armazenar login
+                    sessionStorage.setItem('login', JSON.stringify(login));
 
-                // Redirecionando
-                window.location.href = '/pages/home.html';
+                    // Redirecionando
+                    window.location.href = ''; // em breve
+                } else {
+                    delete user.password;
+                    login.login = true;
+                    login.user = user;
 
+                    // Armazenar login
+                    sessionStorage.setItem('login', JSON.stringify(login));
+
+                    // Redirecionando
+                    window.location.href = '/pages/home.html';
+                }
             } else {
                 alert('Senha incorreta.');
             }

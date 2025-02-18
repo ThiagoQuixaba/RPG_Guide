@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const { authenticateUser } = require('./auth');
+const { getEvents } = require('./events');
 const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -27,6 +28,14 @@ app.post('/login', (req, res) => {
     });
 });
 
+app.get('/events', (req, res) => {
+    getEvents((err, events) => {
+        if (err) {
+            return res.status(500).json({ error: err.message });
+        }
+        res.json(events);
+    });
+});
 
 // Rota para a raiz que serve o index.html
 app.get('/', (req, res) => {
@@ -34,7 +43,7 @@ app.get('/', (req, res) => {
 });
 
 // Serve arquivos estáticos das pastas 'imgs'
-app.use('/Imgs', express.static(path.join(__dirname, 'Imgs')));
+app.use('/imgs', express.static(path.join(__dirname, 'imgs')));
 
 // Inicia o servidor
 app.listen(PORT, () => {

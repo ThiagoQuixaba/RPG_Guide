@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="../../../imgs/LogoIcon.png">
+		<link rel="stylesheet" type="text/css" href="../../../css/layout.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/aptidao.css">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+		<title>Regras Criacao De Personagem</title>
+	</head>
+	<body>
+		<header>
+			<a href="../../home.html" id="logo"><img src="../../../imgs/LogoIcon.png" width="175" height="175"></a>
+			<nav id="menu">
+				<a href="../../home.html"><b>Home</b></a>
+				<p>|</p>
+				<a href="../../regras.html"><b>Regras</b></a>
+				<p>|</p>
+				<a href="../../eventos.html"><b>Eventos</b></a>
+				<p>|</p>
+				<a href="../../fichas.html"><b>Fichas</b></a>
+				<p>|</p>
+				<a href="../../comunidade.html"><b>Comunidade</b></a>
+				<p></p>
+			</nav>
+			</nav>
+		</header>
+		<main>
+            <div id="Conceito">
+				<p class="titulo2">Conceito de Atributos no RPG:</p>
+				<p class="descricao">
+                    Os atributos são características fundamentais que definem a capacidade e a performance de um personagem no <b>RPG</b>. Eles influenciam diretamente as ações, habilidades e a sobrevivência do personagem durante a aventura. <br>
+                    Cada atributo representa um aspecto específico do personagem.
+                </p>
+			</div>
+            <div id="Vida">
+				<p class="titulo2">Vida:</p>
+				<div class="descricao">
+                    <b>• Descrição:</b> Representa a quantidade total de vida que um personagem possui, refletindo sua resistência, vitalidade e capacidade de suportar danos físicos. <br>
+                    <b>• Quantidade Total:</b> ((<b><i>Fortitude</i></b> * <b><i>Físico</b></i>) + 1) + <b><i>Extra</i></b>
+                </div>
+			</div>
+            <div id="Vigor">
+				<p class="titulo2">Vigor:</p>
+				<div class="descricao">
+                    <b>• Descrição:</b> Mede a capacidade do personagem de realizar ações exaustivas, como correr, fazer parkour, escalar, nadar, entre outros. Reflete sua resistência física em atividades intensas. <br>
+                    <b>• Quantidade Total:</b> ((<b><i>Fortitude</i></b> * <b><i>Destreza</b></i>) + 1) + <b><i>Extra</i></b>
+                </div>
+			</div>
+            <div id="Mana">
+				<p class="titulo2">Mana:</p>
+				<div class="descricao">
+                    <b>• Descrição:</b> Indica a capacidade do personagem de realizar habilidades mágicas, similar ao Vigor, mas voltado para o uso de magia. <br>
+                    <b>• Quantidade Total:</b> ((<b><i>Fortitude</i></b> * <b><i>Magia</b></i>) + 1) + <b><i>Extra</i></b>
+                </div>
+			</div>
+            <div id="Sanidade">
+				<p class="titulo2">Sanidade:</p>
+				<div class="descricao">
+                    <b>• Descrição:</b> Refere-se ao estado mental e emocional do personagem, refletindo sua capacidade de resistir a danos emocionais e psicológicos. <br>
+                    <b>• Quantidade Total:</b> ((<b><i>Vontade</i></b> * <b><i>Intelecto</b></i>) + 1) + <b><i>Extra</i></b>
+                </div>
+			</div>
+            <div id="Saciedade">
+				<p class="titulo2">Saciedade:</p>
+				<div class="descricao">
+                    <b>• Descrição:</b> Representa o nível de saciedade do personagem, onde 100% indica que está completamente alimentado, e 0% significa que está sofrendo de <b><i>Desnutrição</i></b>. <br>
+                    <b>• Quantidade Total:</b> 100%
+                </div>
+			</div>
+            <div id="Hidratação">
+				<p class="titulo2">Hidratação:</p>
+				<div class="descricao">
+                    <b>• Descrição:</b> Refere-se ao nível de hidratação do personagem, onde 100% indica que está completamente hidratado e 0% significa que está sofrendo de <b><i>Desidratação</i></b>. <br>
+                    <b>• Quantidade Total:</b> 100%
+                </div>
+			</div>
+            <div id="Cotas de Magia">
+				<p class="titulo2">Cotas de Magia:</p>
+				<div class="descricao">
+                    <b>• Descrição:</b> Indica a quantidade total de <b><i>feitiços</i></b> ou <b><i>rituais</i></b> que um personagem pode aprender, refletindo sua capacidade de aprendizado e uso de habilidades mágicas. <br>
+                    <b>• Quantidade Total:</b> (10 + (<b><i>Intelecto</b></i> * 10)) + <b><i>Extra</i></b>
+                </div>
+			</div>
+            <div id="Cotas de Técnicas">
+				<p class="titulo2">Cotas de Técnicas:</p>
+				<div class="descricao">
+                    <b>• Descrição:</b> Refere-se à quantidade total de <b><i>técnicas</i></b> que um personagem pode aprender, indicando sua capacidade de desenvolver habilidades especiais. <br>
+                    <b>• Quantidade Total:</b> (10 +(<b><i>Intelecto</b></i> * 10)) + <b><i>Extra</i></b>
+                </div>
+			</div>
+            <div id="Pontos de Aptidão">
+				<p class="titulo2">Pontos de Aptidão:</p>
+				<div class="descricao">
+                    <b>• Descrição:</b> Refere-se à quantidade total de pontos que um personagem pode distribuir em atributos e habilidades, refletindo seu crescimento e evolução ao longo do tempo. <br>
+                    <b>• Quantidade Total:</b> (80 + (24 * <b><i>Level</i></b>)) + <b><i>Extra</i></b>
+                </div>
+			</div>
+            <div id="Pontos de Raça">
+				<p class="titulo2">Pontos de Raça:</p>
+				<div class="descricao">
+                    <b>• Descrição:</b> Usados para adquirir habilidades passivas herdadas, habilidades ativas herdadas e rotas de raças, permitindo desbloquear habilidades ativas e passivas que definem o estilo de combate do personagem. <br>
+                    <b>• Quantidade Total:</b> (10 + (5 * <b><i>Level</i></b>)) + <b><i>Extra</i></b>
+                </div>
+			</div>
+            <div id="Pontos de Classe">
+				<p class="titulo2">Pontos de Classe:</p>
+				<div class="descricao">
+                    <b>• Descrição:</b> Usados para adquirir e aprimorar classes, subclasses e rotas de classe, permitindo desbloquear habilidades ativas e passivas que definem o estilo de combate do personagem. <br>
+                    <b>• Quantidade Total:</b> (10 + (5 * <b><i>Level</i></b>)) + <b><i>Extra</i></b>
+                </div>
+			</div>
+            <div id="Pontos de Profissão">
+				<p class="titulo2">Pontos de Profissão:</p>
+				<div class="descricao">
+                    <b>• Descrição:</b> Utilizados para adquirir profissões que oferecem habilidades únicas, tanto ativas quanto passivas, aumentando a eficácia em tarefas específicas. <br>
+                    <b>• Quantidade Total:</b> (1 + (1 * (<b><i>Level</i></b> / 10))) + <b><i>Extra</i></b>
+                </div>
+			</div>
+            <div id="Level">
+				<p class="titulo2">Level:</p>
+				<div class="descricao">
+                    <b>• Descrição:</b> Representa o nível de experiência de um personagem. Se upa de Level após acumular experiência suficiente. Sempre que subir de nível, você ganha 24 Pontos de Aptidão e 5 Pontos de Classe, 5 Pontos de Raça. A cada 10 leveis, você ganha 1 Pontos de Profissão. <br>
+                </div>
+                <div class="descricao">
+                    <b>• Níveis de experiência:</b> <br>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Level</th>
+                                <th>Experiência</th>
+                                <th>Level</th>
+                                <th>Experiência</th>
+                                <th>Level</th>
+                                <th>Experiência</th>
+                                <th>Level</th>
+                                <th>Experiência</th>
+                                <th>Level</th>
+                                <th>Experiência</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>100</td>
+                                <td>21</td>
+                                <td>265</td>
+                                <td>41</td>
+                                <td>704</td>
+                                <td>61</td>
+                                <td>1.868</td>
+                                <td>81</td>
+                                <td>4.956</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>105</td>
+                                <td>22</td>
+                                <td>279</td>
+                                <td>42</td>
+                                <td>739</td>
+                                <td>62</td>
+                                <td>1.961</td>
+                                <td>82</td>
+                                <td>5.204</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>110</td>
+                                <td>23</td>
+                                <td>293</td>
+                                <td>43</td>
+                                <td>776</td>
+                                <td>63</td>
+                                <td>2.059</td>
+                                <td>83</td>
+                                <td>5.464</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>116</td>
+                                <td>24</td>
+                                <td>307</td>
+                                <td>44</td>
+                                <td>815</td>
+                                <td>64</td>
+                                <td>2.162</td>
+                                <td>84</td>
+                                <td>5.737</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>121</td>
+                                <td>25</td>
+                                <td>322</td>
+                                <td>45</td>
+                                <td>856</td>
+                                <td>65</td>
+                                <td>2.270</td>
+                                <td>85</td>
+                                <td>6.024</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>128</td>
+                                <td>26</td>
+                                <td>339</td>
+                                <td>46</td>
+                                <td>898</td>
+                                <td>66</td>
+                                <td>2.384</td>
+                                <td>86</td>
+                                <td>6.325</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>134</td>
+                                <td>27</td>
+                                <td>356</td>
+                                <td>47</td>
+                                <td>943</td>
+                                <td>67</td>
+                                <td>2.503</td>
+                                <td>87</td>
+                                <td>6.642</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>141</td>
+                                <td>28</td>
+                                <td>373</td>
+                                <td>48</td>
+                                <td>991</td>
+                                <td>68</td>
+                                <td>2.628</td>
+                                <td>88</td>
+                                <td>6.974</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>148</td>
+                                <td>29</td>
+                                <td>392</td>
+                                <td>49</td>
+                                <td>1.040</td>
+                                <td>69</td>
+                                <td>2.760</td>
+                                <td>89</td>
+                                <td>7.322</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>155</td>
+                                <td>30</td>
+                                <td>412</td>
+                                <td>50</td>
+                                <td>1.092</td>
+                                <td>70</td>
+                                <td>2.898</td>
+                                <td>90</td>
+                                <td>7.689</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>163</td>
+                                <td>31</td>
+                                <td>432</td>
+                                <td>51</td>
+                                <td>1.147</td>
+                                <td>71</td>
+                                <td>3.043</td>
+                                <td>91</td>
+                                <td>8.073</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>171</td>
+                                <td>32</td>
+                                <td>454</td>
+                                <td>52</td>
+                                <td>1.204</td>
+                                <td>72</td>
+                                <td>3.195</td>
+                                <td>92</td>
+                                <td>8.477</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>180</td>
+                                <td>33</td>
+                                <td>476</td>
+                                <td>53</td>
+                                <td>1.264</td>
+                                <td>73</td>
+                                <td>3.354</td>
+                                <td>93</td>
+                                <td>8.900</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>189</td>
+                                <td>34</td>
+                                <td>500</td>
+                                <td>54</td>
+                                <td>1.327</td>
+                                <td>74</td>
+                                <td>3.522</td>
+                                <td>94</td>
+                                <td>9.345</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>198</td>
+                                <td>35</td>
+                                <td>525</td>
+                                <td>55</td>
+                                <td>1.394</td>
+                                <td>75</td>
+                                <td>3.698</td>
+                                <td>95</td>
+                                <td>9.813</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>208</td>
+                                <td>36</td>
+                                <td>552</td>
+                                <td>56</td>
+                                <td>1.464</td>
+                                <td>76</td>
+                                <td>3.883</td>
+                                <td>96</td>
+                                <td>10.303</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>218</td>
+                                <td>37</td>
+                                <td>579</td>
+                                <td>57</td>
+                                <td>1.537</td>
+                                <td>77</td>
+                                <td>4.077</td>
+                                <td>97</td>
+                                <td>10.819</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>229</td>
+                                <td>38</td>
+                                <td>608</td>
+                                <td>58</td>
+                                <td>1.614</td>
+                                <td>78</td>
+                                <td>4.281</td>
+                                <td>98</td>
+                                <td>11.360</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>241</td>
+                                <td>39</td>
+                                <td>639</td>
+                                <td>59</td>
+                                <td>1.694</td>
+                                <td>79</td>
+                                <td>4.495</td>
+                                <td>99</td>
+                                <td>11.927</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>253</td>
+                                <td>40</td>
+                                <td>670</td>
+                                <td>60</td>
+                                <td>1.779</td>
+                                <td>80</td>
+                                <td>4.720</td>
+                                <td>100</td>
+                                <td>12.524</td>
+                            </tr>
+                        </tbody>
+                    </table>                    
+                </div>
+			</div>
+		<script src="../../script.js"></script>
+	</body>
+</html>
