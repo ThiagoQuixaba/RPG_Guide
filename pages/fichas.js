@@ -113,7 +113,6 @@ function exibirFichas(fichas) {
             <b>Investigação:</b> ${ficha.investigacao} <br>
             <b>Tática:</b> ${ficha.tatica} <br>
             <b>Religião:</b> ${ficha.religiao} <br>
-            <b>Pilotagem/direção:</b> ${ficha.pilotagem} <br>
             <b>Metalurgia:</b> ${ficha.metalurgia} <br>
             <b>Marcenaria:</b> ${ficha.marcenaria} <br>
             <b>Artesanato:</b> ${ficha.artesanato} <br>
