@@ -73,7 +73,6 @@ function exibirFichas(fichas) {
             <b>Destreza:</b> ${ficha.destreza} <br>
             <b>Agilidade:</b> ${ficha.agilidade} <br>
             <b>Presença:</b> ${ficha.presenca} <br>
-            <b>Magia:</b> ${ficha.magia} <br>
             <b>Magia:</b> ${ficha.magia} <br>`;
 
         const subAptidoes = document.createElement('p');
