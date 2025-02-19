@@ -20,10 +20,6 @@ form.addEventListener('submit', async (event) => {
             user = await response.json();
 
             if (user.password === password) {
-                //console.log('Dados do usuário:', user);
-                //console.log(`ID: ${user.id}`);
-                //console.log(`Nome de usuário: ${user.username}`);
-                //console.log(`Senha do usuário: ${user.password}`);
                 window.location.href = '/pages/home.html';
                 delete user.password;
                 return user;

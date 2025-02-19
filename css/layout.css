@@ -157,3 +157,32 @@ a {
     font-size: 24px;
     color: #312113; 
 }
+
+.descricao2 {
+    font-family: "Playfair Display", serif;
+    font-size: 12pt;
+    color: #312113; 
+    padding-left: 15px;
+    padding-bottom: 0px;
+}
+
+.subtitulo3 {
+    padding-left: 5px;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    color: #312113; 
+}
+
+.descricao3 {
+    font-family: "Playfair Display", serif;
+    font-size: 12pt;
+    color: #312113; 
+    padding-left: 15px;
+    padding-bottom: 0px;
+    margin: 10px;
+}
+
+.container2 {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os elementos */
+}
